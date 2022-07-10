@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-10T20:30:08.468Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="GGcjX5HvSCs92eMIBHcU" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-10T22:18:40.631Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="2yV8FY6fr_xIB0jruZEg" version="20.0.4" type="github">
   <diagram id="cNZQbdQHIEL0-vXvuCo8" name="Page-1">
     <mxGraphModel dx="2272" dy="1862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="GH5Le7gdozkGGqR5zbXf-3" value="Student" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
           <mxGeometry x="10" y="200" width="180" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="GH5Le7gdozkGGqR5zbXf-4" value="+student_id(PK)&#xa;+course_id(FK)&#xa;+advisor_id(FK)&#xa;+first_name&#xa;+middle_name&#xa;+last_name&#xa;+city&#xa;+state&#xa;+address&#xa;+zip_code&#xa;+race_name(FK)&#xa;+age&#xa;+gender&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="GH5Le7gdozkGGqR5zbXf-3" vertex="1">
+        <mxCell id="GH5Le7gdozkGGqR5zbXf-4" value="+student_id(PK)&#xa;+advisor_id(FK)&#xa;+first_name&#xa;+middle_name&#xa;+last_name&#xa;+city&#xa;+state&#xa;+address&#xa;+zip_code&#xa;+race_name(FK)&#xa;+age&#xa;+gender&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="GH5Le7gdozkGGqR5zbXf-3" vertex="1">
           <mxGeometry y="30" width="180" height="200" as="geometry" />
         </mxCell>
         <mxCell id="GH5Le7gdozkGGqR5zbXf-6" value="Advisor" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
@@ -19,10 +19,10 @@
         <mxCell id="GH5Le7gdozkGGqR5zbXf-10" value="StudentSection" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
           <mxGeometry x="310" y="225" width="180" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="GH5Le7gdozkGGqR5zbXf-11" value="+section_id(PK)&#xa;+student_id(FK)&#xa;+gpa&#xa;+total_credits&#xa;+grad_date&#xa;+status_name(FK)&#xa;+major_title(FK)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="GH5Le7gdozkGGqR5zbXf-10" vertex="1">
+        <mxCell id="GH5Le7gdozkGGqR5zbXf-11" value="+section_id(PK)&#xa;+student_id(FK)&#xa;+course_id(FK)&#xa;+gpa&#xa;+total_credits&#xa;+grad_date&#xa;+status_name(FK)&#xa;+major_title(FK)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="GH5Le7gdozkGGqR5zbXf-10" vertex="1">
           <mxGeometry y="30" width="180" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="GH5Le7gdozkGGqR5zbXf-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToMany;startFill=0;endArrow=ERzeroToMany;endFill=0;" parent="1" source="GH5Le7gdozkGGqR5zbXf-13" target="GH5Le7gdozkGGqR5zbXf-4" edge="1">
+        <mxCell id="GH5Le7gdozkGGqR5zbXf-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToMany;startFill=0;endArrow=ERzeroToMany;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="GH5Le7gdozkGGqR5zbXf-13" target="GH5Le7gdozkGGqR5zbXf-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="GH5Le7gdozkGGqR5zbXf-13" value="Course" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
@@ -35,7 +35,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="GH5Le7gdozkGGqR5zbXf-17" value="Department" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
-          <mxGeometry x="360" y="520" width="160" height="120" as="geometry" />
+          <mxGeometry x="560" y="530" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="GH5Le7gdozkGGqR5zbXf-18" value="+dep_id(PK)&#xa;+course_id(FK)&#xa;+dep_name&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="GH5Le7gdozkGGqR5zbXf-17" vertex="1">
           <mxGeometry y="30" width="160" height="90" as="geometry" />
@@ -92,6 +92,15 @@
           <mxGeometry y="30" width="160" height="90" as="geometry" />
         </mxCell>
         <mxCell id="FnuxJybWUYLw7SanpU-6-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERone;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="FnuxJybWUYLw7SanpU-6-11" target="GH5Le7gdozkGGqR5zbXf-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FnuxJybWUYLw7SanpU-6-15" value="Semester" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="620" y="680" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FnuxJybWUYLw7SanpU-6-16" value="+semester_id(PK)&#xa;+course_id(FK)&#xa;+semester_name" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="FnuxJybWUYLw7SanpU-6-15">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FnuxJybWUYLw7SanpU-6-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;" edge="1" parent="1" source="GH5Le7gdozkGGqR5zbXf-14" target="FnuxJybWUYLw7SanpU-6-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
